@@ -1,12 +1,12 @@
-Test and dev helper files for saugns/sgensys
+Dev test and helper files for saugns/sgensys
 ============================================
 
 Text-crunching
 --------------
 
-The files named beginning with
-"usr-include" are meant for testing and benchmarking
-the low-level text-crunching code in saugns/sgensys.
+Files named beginning with "usr-include" are meant
+for testing and benchmarking low-level text-crunching
+code in saugns/sgensys.
 
 The first of those files contains 13MB of script-ish
 "junk" assembled by concatenating /usr/include on a
@@ -45,15 +45,15 @@ it means low-level scanning code will run fast enough for
 use with real longer scripts e.g. inside a music player in
 the future, even on old systems.
 
-The main time use for parsing will be elsewhere in the code
-as long as text crunching is this fast.
-
-The speed means that for low-level scanning, there's no point
-using anything more complicated - "speed through simplicity"
-will keep working.
-
 (How large would a future music composition for the program
 be? Probably at least an order of magnitude or two less than
 the 13MB test file. If so, that means at least an order of
 magnitude or two less of time overhead. At most ~0.03 seconds
 on the Pentium III.)
+
+The main time use for parsing will be elsewhere in the code
+as long as text crunching is this fast.
+
+The speed means that for low-level scanning, there's no point
+using anything more complicated: "speed through simplicity"
+will keep working.
