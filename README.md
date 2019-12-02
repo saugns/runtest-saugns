@@ -1,12 +1,12 @@
-Dev test and helper files for saugns/sgensys
-============================================
+Dev test and helper files for saugns
+====================================
 
 Text-crunching
 --------------
 
 Files named beginning with "usr-include" are meant
 for testing and benchmarking low-level text-crunching
-code in saugns/sgensys.
+code in saugns.
 
 The first of those files contains 13MB of script-ish
 "junk" assembled by concatenating /usr/include on a
@@ -21,19 +21,17 @@ processing, the main test should pass (no crash,
 no other errors) without significant slow-downs
 compared to earlier versions.
 
-Using the "test-builder" program which can be built
-for saugns (and for new-enough versions of sgensys):
+Using the "test-scan" program which can be built
+for saugns using `make tests`:
 
 `
 ./time-lexer.sh
 `
 
-If instead an older sgensys version is built with
-changed conditional compilation options:
-
-`
-./time-lexer_old.sh
-`
+To test versions of saugns older than v0.3.4,
+including old versions named sgensys, the tag
+'pre-v0.3.4' is provided. "test-scan" becomes
+"test-builder" (built with `make test`).
 
 Results and considerations
 --------------------------
