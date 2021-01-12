@@ -1,6 +1,24 @@
 Dev test and helper files for saugns
 ====================================
 
+Running example scripts in mute mode
+------------------------------------
+
+To see how long it takes to fully run all example
+scripts, a timed -m (muted) run will loop using:
+
+`
+./time-muterun.sh
+`
+
+If several versions exist, the first argument can
+specify the program to run instead of the default
+"../saugns/saugns":
+
+`
+./time-muterun.sh saugns
+`
+
 Text-crunching
 --------------
 
@@ -33,8 +51,7 @@ including old versions named sgensys, the tag
 'pre-v0.3.4' is provided. "test-scan" becomes
 "test-builder" (built with `make test`).
 
-Results and considerations
---------------------------
+### Results and considerations
 
 On an old ThinkPad x31 laptop with a Pentium III CPU,
 the main text-crunching test times to a third of a second.
