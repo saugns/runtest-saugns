@@ -19,6 +19,15 @@ specify the program to run instead of the default
 ./time-muterun.sh saugns
 `
 
+To test how long a one-liner script takes to run,
+where the second argument is optional, and as the
+above for the saugns version to use. Testing will
+likewise loop.
+
+`
+./time-muteoneliner.sh "R mg t60*10" saugns
+`
+
 Text-crunching
 --------------
 
