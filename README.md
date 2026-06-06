@@ -1,6 +1,9 @@
 Dev test and helper files for saugns
 ====================================
 
+**Moved [to Codeberg](https://codeberg.org/sau/runtest-saugns).
+Will no longer be updated.**
+
 Running example scripts in mute mode
 ------------------------------------
 
